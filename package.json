@@ -9,6 +9,7 @@
 	"nodemon": "nodemon dist/server.bundle.js",
     "build-server": "webpack --config webpack.server.js",
     "build-client": "webpack --config webpack.client.js",
+	"build": "npm run build-server && npm run build-client",
     "start": "node dist/server.bundle.js"
   },
   "keywords": [],

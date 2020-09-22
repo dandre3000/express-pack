@@ -43,7 +43,7 @@ let config = {
 		new HtmlWebpackPlugin({
 			inject: 'head',
 			template: './src/templates/index.html',
-			filename: 'index.html',
+			filename: 'templates/index.html',
 			minify: {
 				removeComments: true,
 				collapseWhitespace: true

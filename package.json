@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-dev-server": "cross-env NODE_ENV=development webpack -w --config webpack.server.js",
-    "nodemon": "nodemon dist/server.bundle.js",
+    "nodemon": "cross-env NODE_ENV=development nodemon dist/server.bundle.js",
     "build-server": "webpack --config webpack.server.js",
     "build-client": "webpack --config webpack.client.js",
     "build": "npm run build-server && npm run build-client",
